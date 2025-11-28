@@ -17,6 +17,55 @@
     <!-- Main Body -->
     <div class="bg-white shadow-xl rounded-xl p-8 w-full max-2-2xl">
         <h1 class="text-3xl font-bold text-center text-purple-800 mb-6"> UiTM CGPA Calculator 2025</h1>
+
+        <!-- Form -->
+        <form id="cgpa-form" class="space-y-4">
+            <div class="grid grid-cols-3 gap-4 font-semibold text-gray-600 border-b pb-2">
+                <p>Subject</p>
+                <p>Credit Unit</p>
+                <p>Grade</p>
+            </div>
+
+            <div id="subject-container" class="space-y-4">
+                <div class="grid grid-cols-3 gap-4 items-center">
+                    <p class="text-gray-700"> Subject 1</p>
+                    <input type="number" min="1" max="10" value="3" data-index="0"
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                    <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+
+                    <p class="text-gray-700"> Subject 2</p>
+                    <input type="number" min="1" max="10" value="3" data-index="1"
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                    <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+
+                    <p class="text-gray-700"> Subject 3</p>
+                    <input type="number" min="1" max="10" value="3" data-index="2"
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                    <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+
+                    <p class="text-gray-700"> Subject 4</p>
+                    <input type="number" min="1" max="10" value="3" data-index="3"
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                    <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+
+                    <p class="text-gray-700"> Subject 5</p>
+                    <input type="number" min="1" max="10" value="3" data-index="4"
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                    <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+
+                    <p class="text-gray-700"> Subject 6</p>
+                    <input type="number" min="1" max="10" value="3" data-index="5"
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                    <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full">
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 
