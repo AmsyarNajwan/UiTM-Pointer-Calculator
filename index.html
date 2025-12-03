@@ -25,12 +25,12 @@
     <div class="bg-white shadow-xl rounded-xl p-8 w-full max-w-2xl">
         <h1 class="text-3xl font-bold text-center text-purple-800 mb-6 flex items-center justify-center space-x-3">
             <img src="media/uitm-logo.png" alt="UiTM Logo" class="h-10 w-10">
-            <span>UiTM CGPA Calculator 2025</span>
+            <span>UiTM GPA Calculator 2025</span>
         </h1>
 
         <!-- Form -->
         <form id="cgpa-form" class="space-y-4">
-            <div class="grid grid-cols-3 gap-4 font-semibold text-gray-600 border-b pb-2">
+            <div class="grid grid-cols-4 gap-4 font-semibold text-gray-600 border-b pb-2">
                 <p>Subject</p>
                 <p>Credit Unit</p>
                 <p>Grade</p>
@@ -38,11 +38,12 @@
 
             <div id="subject-container" class="space-y-4">
                 <div class="subject-row grid grid-cols-4 gap-4 items-center">
-                    <p class="text-gray-700 subject-label">Subject 1</p>
+                    <input type="text" value="Subject 1" placeholder="e.g., CTU555"
+                        class="subject-name-input p-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full text-gray-700">
                     <input type="number" min="1" max="10" value="3" data-index="0"
-                        class=" credit-unit-input p-2 border border-gray-300 rounded-lg focus::ring-purple-500 focus:border-purple-500 w-full">
+                        class="credit-unit-input p-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full">
                     <input type="text" maxlength="2" data-index="0" placeholder="A, A-, B+ ..."
-                        class="grade-input p-2 border border-gray-300 rounded-lg focus::ring-purple-500 focus:border-purple-500 w-full">
+                        class="grade-input p-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full">
                     <button type="button" onclick="removeSubjectRow(this)"
                         class="text-red-500 hover:text-red-700 font-bold hidden">Remove</button>
                 </div>
@@ -129,7 +130,6 @@
         }
 
         function reIndexSubjects() {
-            // FIX: Changed 'row' to 'rows'
             const rows = document.querySelectorAll('.subject-row');
             subjectCount = 0;
 
